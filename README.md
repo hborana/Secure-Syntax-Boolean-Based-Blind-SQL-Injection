@@ -1,0 +1,1 @@
+# Secure-Syntax-Boolean-Based-Blind-SQL-Injection
