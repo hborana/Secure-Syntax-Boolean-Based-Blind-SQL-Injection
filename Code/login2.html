@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login Form</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .left-column {
+        background-image: url("sql3.png");
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        flex: 1;
+      }
+
+      .right-column {
+        flex: 1; /* Takes the other half */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      form {
+        width: 320px; /* Width of form */
+        padding: 1em;
+        border: 1px solid #ddd;
+        background: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: #5cb85c;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #4cae4c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-column">
+        <!-- Image is set as a background -->
+      </div>
+      <div class="right-column">
+        <form action="/submit-your-login-form" method="POST">
+          <h2>Secure Syntax</h2>
+          <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div>
+            <button type="submit">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
